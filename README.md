@@ -13,34 +13,6 @@ The dataset is a subset of the **ISIC 2018 Challenge (Task 3)** containing appro
 
 ---
 
-## Repository Architecture
-
-lesion-lens/
-│
-├── data/
-│   ├── img/                  # Directory containing ~3,800 ISIC .jpg images
-│   └── txt/                  # Manifest and label files
-│       ├── classes.txt
-│       ├── train.csv
-│       ├── val.csv
-│       ├── test.csv
-│       ├── train_small.csv   # Debugging subset (200 rows)
-│       └── val_small.csv     # Debugging subset (200 rows)
-│
-├── saved_models/             # Generated model checkpoints (.pt / .pth)
-├── logs/                     # Local training logs
-│
-├── explore.py                # Data analysis and visualization utilities
-├── datasets.py               # Custom PyTorch Dataset class (LesionDataset)
-├── models.py                 # Network architectures (SimpleBNConv, ResNet wrapper)
-├── train.py                  # Training pipeline, validation loop, and metrics
-│
-├── notebook.ipynb            # Core execution notebook (Google Colab wrapper)
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project documentation
-
----
-
 ## Technical Features & Pipeline
 
 ### 1. Data Exploration & Imbalance Mitigation
