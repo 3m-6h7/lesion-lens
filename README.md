@@ -46,7 +46,7 @@
 ├── model.py            # CNN architecture definition
 ├── hybrid_inference.py # Feature extraction and fusion pipeline
 └── requirements.txt    # Project dependencies
-
+```
 ---
 
 ## How to Run
@@ -55,11 +55,14 @@
 ```bash
 git clone [https://github.com/3m-6h7/lesion-lens.git](https://github.com/3m-6h7/lesion-lens.git)
    cd lesion-lens
+```
 
 2. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
+```
 
 3. **Run the training pipeline:**
 ```bash
 python train.py
+```
