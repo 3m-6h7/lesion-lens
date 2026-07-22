@@ -1,0 +1,8 @@
+# .gitignore
+venv/
+__pycache__/
+.DS_Store
+data/
+*.pt
+*.pth
+wandb/
