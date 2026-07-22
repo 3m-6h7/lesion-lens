@@ -62,7 +62,18 @@ git clone [https://github.com/3m-6h7/lesion-lens.git](https://github.com/3m-6h7/
 pip install -r requirements.txt
 ```
 
-3. **Run the training pipeline:**
+3. **Set up the dataset:**
 ```bash
+python data_setup.py
+```
+
+4. **Train the Deep Learning model (with W&B tracking):**
+```bash
+wandb login
 python train.py
+```
+
+5. **Run the Hybrid Feature Fusion Pipeline:**
+```bash
+python hybrid_inference.py
 ```
